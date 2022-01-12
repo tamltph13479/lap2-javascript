@@ -1,9 +1,19 @@
 import newlist from "../components/newlist";
+import Banner from "../components/banner";
 const HomePase = {
     render() {
         return /*html*/ `
          <main>
-        ${newlist.print()}
+                <div class="">
+                    <a href="">
+                          ${Banner.render()}
+                     </a>
+                </div>
+      <div> 
+
+     ${newlist.print()}
+
+      </div>
         </main>
             `;
     },

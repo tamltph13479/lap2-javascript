@@ -20,11 +20,7 @@ const Header = {
                     <button class="bg-indigo-900 text-[#ffffff] px-4 border-solid border-2 border-White hover:text-[#ff0000] ">Tìm kiếm</button>
                 </div>
             </div>
-            <div class="">
-                <a href="">
-                    <img src="https://apolyorg.files.wordpress.com/2019/04/xbanner-trang-lien-he-moi.jpg.pagespeed.ic_.fqvwhe7pcx.jpg" alt="" width="1024px" class="my-2 hover:scale-75 translate-x-4 skew-y-3 md:transform-none ease-in duration-300 ">
-                </a>
-            </div>
+        
         </header>`;
     },
 };
