@@ -5,6 +5,7 @@ const Newedit = {
         console.log(result);
         return /*html*/ `
             <h1> ${result.name}</h1>
+            <p> ${result.Email} </p>
                   <img src="${result.img}"/> 
                   <p> ${result.desc} </p>
         
