@@ -4,10 +4,12 @@ const DetailNewPase = {
         const result = data.find((post) => post.id === id);
         console.log(result);
         return /*html*/ `
-            <h1> ${result.title}</h1>
-                  <img src="${result.img}"/> 
+          <div class="text-center"  > 
+                <h1 class="text-[#ff9000] text-[20px] font-semibold "> ${result.title}</h1>
+                  <img src="${result.img} " class="py-[20px] m-auto"/> 
                   <p> ${result.desc} </p>
-        
+    </div>
+           
             `;
     },
 };
