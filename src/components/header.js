@@ -19,13 +19,14 @@ const Header = {
                     <li><a href="/About" class="block px-4 py-3 hover:text-[#ff0000] text-[#ffffff]">Tuyển Sinh</a></li>
                     <li><a href="/product" class="block px-4 py-3 hover:text-[#ff0000] text-[#ffffff]">Trương trình đào tạo</a></li>
                 </ul>
-                <div class="px-[60px] py-3">
+                <div class="px-[30px] py-3">
                     <input type="text">
                     <button class="bg-indigo-900 text-[#ffffff] px-4 border-solid border-2 border-White hover:text-[#ff0000] ">Tìm kiếm</button>
                 </div>
-                     <div class ="px-4 py-3">  
+                     <div class ="px-2 py-3">  
                   <a href="/signin" class="  hover:text-[#ff0000] text-[#ffffff]"> Đăng nhập</a>
-                  <a href="/signup" class=" px-4 hover:text-[#ff0000] text-[#ffffff]">  Đăng ký</a>       
+                  <a href="/signup" class=" px-[10px]  hover:text-[#ff0000] text-[#ffffff]">  Đăng ký</a>       
+                  <a href="/admin/dashboard" class="  hover:text-[#ff0000] text-[#ffffff]"> Dashboard</a>  
             
             </div>
             </div>
