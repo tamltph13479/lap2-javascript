@@ -1,9 +1,7 @@
 import data from "../pages/data";
-
-
 const newlist = {
         print() {
-            return /*html*/ `
+            return /* html */ `
             <h2 class=" text-[20px] font-semibold">TIN TỨC HỌC TẬP</h2>
             <div class="grid grid-cols-3 gap-8">
                 ${data.map((post) => `
@@ -55,7 +53,7 @@ const newlist = {
 
 
 
-        `
-    }
-}
+        `;
+    },
+};
 export default newlist;

@@ -1,4 +1,4 @@
-export const data = [{
+const data = [{
 
         id: "1",
         title: "  Vinh danh 295 sinh viên FPT polytechnic học kỳ spring 2017",
@@ -23,3 +23,17 @@ export const data = [{
 
 ];
 export default data;
+
+// <script >
+//     function loadScript(src, callBack) {
+//         // creates a <script> tag and append it to the page
+//         // this causes the script with given src to start loading and run when complete
+//         let script = document.createElement('script');
+//         script.src = src;
+//         script.onload = function() {
+//             callBack();
+//         }
+//         document.head.append(script);
+//     }
+// loadScript('http://my/script.js', newFunction); <
+// /scr

@@ -1,27 +1,20 @@
 import Navigo from "navigo";
 import HomePase from "./pages/home";
 import AboutPage from "./pages/About";
-import product from "./pages/product.js";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import product from "./pages/product";
 import DetailNewPase from "./pages/detaiNews";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
-import Dashboard from "./Admin/dashboard";
-import News from "./Admin/news";
-import Newadd from "./Admin/newadd";
-import Newedit from "./Admin/editnew";
-
-
+import Dashboard from "./pages/Admin/dashboard2";
+import NewPage from "./pages/Admin/New";
+import AddnewPage from "./pages/Admin/New/add";
+import Editnews from "./pages/Admin/New/edit"
 const router = new Navigo("/", { linksSelector: "a" });
 
 const print = (content) => {
-    document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
-    document.getElementById("footer").innerHTML = Footer.render();
+
 };
-
-
 
 router.on({
     "/": () => {
@@ -47,16 +40,17 @@ router.on({
     "/admin/dashboard": () => {
         print(Dashboard.render());
     },
-    "/admin/new": () => {
-        print(News.render());
+    "/admin/news": () => {
+        print(NewPage.render());
     },
     "/admin/news/add": () => {
-        print(Newadd.render());
+        print(AddnewPage.render());
     },
-    "/admin/news/:id": ({ data }) => {
+    "/admin/news/edit/:id": ({ data }) => {
         const { id } = data;
-        print(Newedit.render(id));
+        print(Editnews.render(id));
     },
+
 
 });
 router.resolve();
